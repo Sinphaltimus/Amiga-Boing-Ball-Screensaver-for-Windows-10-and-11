@@ -1,0 +1,23 @@
+#include <windows.h>
+#include "resource.h"
+
+BOINGF WAVE "BoingBallF.wav"
+BOINGW WAVE "BoingBallW.wav"
+
+IDD_CONFIG DIALOGEX 0, 0, 220, 120
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "BoingBallSaver Settings"
+FONT 9, "Segoe UI"
+BEGIN
+    CONTROL "Enable floor shadow", IDC_FLOORSHADOW, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 12, 90, 12
+    CONTROL "Enable wall shadow",  IDC_WALLSHADOW,  "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 28, 90, 12
+    CONTROL "Enable grid",         IDC_GRID,        "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 44, 90, 12
+    CONTROL "Enable sound",        IDC_SOUND,       "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 60, 90, 12
+	CONTROL "Background color", IDC_BGCOLOR, "Button", BS_PUSHBUTTON | WS_TABSTOP, 130, 12, 80, 14
+	CONTROL "Classic ball geometry", IDC_GEOMETRY, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 72, 90, 12
+
+    PUSHBUTTON "Restore Defaults", IDC_RESTORE, 10, 80, 100, 14
+    DEFPUSHBUTTON "OK", IDOK, 120, 80, 40, 14
+    PUSHBUTTON "Cancel", IDCANCEL, 165, 80, 45, 14
+END
+
