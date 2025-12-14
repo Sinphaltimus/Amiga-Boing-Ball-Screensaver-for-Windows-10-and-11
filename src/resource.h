@@ -15,3 +15,4 @@
 #define IDC_SOUND         1005
 #define IDC_BGCOLOR       1006
 #define IDC_GEOMETRY      1007
+#define IDC_BALLLIGHTING  1008
