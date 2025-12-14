@@ -67,4 +67,4 @@ Geometry Mode: Switch between Classic (Amiga‑style 16×8 sphere) and Smooth (h
 ## Releases
 Latest:
 v1.3 - https://github.com/Sinphaltimus/Amiga-Boing-Ball-Screensaver-for-Windows-10-and-11/releases/tag/v1.3
-v1.2 - https://github.com/Sinphaltimus/Amiga-Boing-Ball-Screensaver-for-Windows-10-and-11/releases
+
