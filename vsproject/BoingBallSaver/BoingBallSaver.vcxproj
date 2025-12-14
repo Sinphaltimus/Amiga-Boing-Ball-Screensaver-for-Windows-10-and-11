@@ -139,7 +139,7 @@ gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     <ResourceCompile Include="BoingBallSaver.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BoingBallSaver_v1.2.cpp" />
+    <ClCompile Include="BoingBallSaver_v1.3.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
