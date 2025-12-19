@@ -52,19 +52,31 @@ This project recreates the bouncing red‑and‑white checkered ball with modern
 
 Open the screensaver’s Settings dialog to adjust:
 
-Floor Shadow: Toggle shadow under the ball.
+Enable Floor Shadow: Toggle cheesey shadow under the ball.
 
-Wall Shadow: Toggle shadow against the back wall.
+Enable Wall Shadow: Toggle shadow against the back wall.
 
-Grid Overlay: Toggle floor/wall grid lines.
+Enable Grid: Toggle floor/wall grid lines.
 
-Sound Effects: Enable/disable bounce sounds.
+Enable Sound: Enable/disable bounce sounds.
+
+Classic Ball Geometry: Switch between Classic (Amiga‑style 16×8 sphere) and Smooth (high‑res 64×32 sphere).
+
+Enable ball lighting: enable or disable the shadow on the ball itself.
 
 Background Color: Choose any color for the scene.
 
-Geometry Mode: Switch between Classic (Amiga‑style 16×8 sphere) and Smooth (high‑res 64×32 sphere).
+Single Monitor Only: Restrict the screensaver to Windows' main monitor only, blank out the rest in multiple monitor setup.
+
+Extended displays: In multiple monitor setup, render a screensaver on each monitor with their own physics with independant ball bouncing out of sync.
+
+Replicated displays: In multiple monitor setup, render a screensaver on each monitor with balls bouncing in sync.
+
+Unified displays: In multiple monitor setup, treat all monitors as one big display allows ball to bounce across monitors.
+
+
 
 ## Releases
 Latest:
-v1.3 - https://github.com/Sinphaltimus/Amiga-Boing-Ball-Screensaver-for-Windows-10-and-11/releases/tag/v1.3
+V2.0 - https://github.com/Sinphaltimus/Amiga-Boing-Ball-Screensaver-for-Windows-10-and-11/releases/tag/V2.0
 
