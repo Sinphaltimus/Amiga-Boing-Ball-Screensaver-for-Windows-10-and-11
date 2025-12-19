@@ -18,6 +18,8 @@ This project recreates the bouncing red‑and‑white checkered ball with modern
   - Sound effects toggle
   - Background color picker
   - Geometry mode toggle (Classic 16×8 vs Smooth 64×32 tessellation)
+  - Lighting mode for ball illumination.
+  - multiple modes for multiple monitors.
 - **Input triggers**: Screensaver exits on any key press or mouse click.
 - **Cursor hiding**: Mouse pointer is hidden during full‑screen saver mode.
 - **Preview mode support**: Runs safely inside Windows Display Settings preview window.
