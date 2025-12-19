@@ -4,21 +4,28 @@
 BOINGF WAVE "BoingBallF.wav"
 BOINGW WAVE "BoingBallW.wav"
 
-IDD_CONFIG DIALOGEX 0, 0, 220, 120
+IDD_CONFIG DIALOGEX 0, 0, 220, 140
 STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
 CAPTION "BoingBallSaver Settings"
 FONT 9, "Segoe UI"
 BEGIN
-    CONTROL "Enable floor shadow", IDC_FLOORSHADOW, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 12, 90, 12
-    CONTROL "Enable wall shadow",  IDC_WALLSHADOW,  "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 28, 90, 12
-    CONTROL "Enable grid",         IDC_GRID,        "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 44, 90, 12
-    CONTROL "Enable sound",        IDC_SOUND,       "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 60, 90, 12
-	CONTROL "Background color", IDC_BGCOLOR, "Button", BS_PUSHBUTTON | WS_TABSTOP, 130, 12, 80, 14
-	CONTROL "Classic ball geometry", IDC_GEOMETRY, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 72, 90, 12
-	CONTROL "Enable ball lighting", IDC_BALLLIGHTING, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 88, 90, 12
+    // Left column: feature checkboxes
+    CONTROL "Enable floor shadow",   IDC_FLOORSHADOW,  "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 12, 90, 12
+    CONTROL "Enable wall shadow",    IDC_WALLSHADOW,   "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 28, 90, 12
+    CONTROL "Enable grid",           IDC_GRID,         "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 44, 90, 12
+    CONTROL "Enable sound",          IDC_SOUND,        "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 60, 90, 12
+    CONTROL "Classic ball geometry", IDC_GEOMETRY,     "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 76, 90, 12
+    CONTROL "Enable ball lighting",  IDC_BALLLIGHTING, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 92, 90, 12
 
-    PUSHBUTTON "Restore Defaults", IDC_RESTORE, 10, 100, 100, 14
-	DEFPUSHBUTTON "OK", IDOK, 120, 100, 40, 14
-	PUSHBUTTON "Cancel", IDCANCEL, 165, 100, 45, 14
+    // Right column: monitor mode radio buttons
+    CONTROL "Background color",      IDC_BGCOLOR, "Button", BS_PUSHBUTTON | WS_TABSTOP, 130, 12, 80, 14
+    CONTROL "Single monitor only",   IDC_MONITOR_SINGLE,     "Button", BS_AUTORADIOBUTTON | WS_TABSTOP | WS_GROUP, 130, 32, 80, 12
+    CONTROL "Extended displays",     IDC_MONITOR_EXTENDED,   "Button", BS_AUTORADIOBUTTON | WS_TABSTOP,             130, 46, 80, 12
+    CONTROL "Replicated displays",   IDC_MONITOR_REPLICATED, "Button", BS_AUTORADIOBUTTON | WS_TABSTOP,             130, 60, 80, 12
+    CONTROL "Unified display",       IDC_MONITOR_UNIFIED,    "Button", BS_AUTORADIOBUTTON | WS_TABSTOP,             130, 74, 80, 12
 
+    // Buttons row
+    PUSHBUTTON    "Restore Defaults", IDC_RESTORE, 10, 115, 100, 14
+    DEFPUSHBUTTON "OK",               IDOK,       120, 115, 40, 14
+    PUSHBUTTON    "Cancel",           IDCANCEL,   165, 115, 45, 14
 END
