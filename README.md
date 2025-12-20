@@ -1,5 +1,5 @@
-# Amiga-Boing-Ball-Screensaver-for-Windows-10-and-11
-A screensaver for Windows 10/11 that mimics the iconic Amiga Boing  Ball demo with options.
+# Amiga-Boing-Ball-Screensaver-for-Windows
+A screensaver for Windows* that mimics the iconic Amiga Boing  Ball demo with options.
 
 # BoingBallSaver
 
@@ -76,7 +76,7 @@ Replicated displays: In multiple monitor setup, render a screensaver on each mon
 
 Unified displays: In multiple monitor setup, treat all monitors as one big display allows ball to bounce across monitors.
 
-
+*Untested on windows 8 or older.
 
 ## Releases
 Latest:
