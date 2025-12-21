@@ -1,12 +1,12 @@
 # Amiga-Boing-Ball-Screensaver-for-Windows
 A screensaver for Windows* that mimics the iconic Amiga Boing  Ball demo with options.
+There is a port of this for MacOS here: https://github.com/adamb3ll/Amiga-Boing-Ball-Screensaver.git
 
-# BoingBallSaver
 
 A Windows screensaver inspired by the classic Amiga **Boing Ball Demo**.  
 This project recreates the bouncing red‑and‑white checkered ball with modern OpenGL, configurable options, and a nostalgic twist.
 
----
+--- I
 
 ## ✨ Features
 
