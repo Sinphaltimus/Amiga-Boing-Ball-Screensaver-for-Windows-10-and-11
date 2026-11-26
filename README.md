@@ -23,12 +23,13 @@ This project recreates the bouncing red‑and‑white checkered ball with modern
 - **Input triggers**: Screensaver exits on any key press or mouse click.
 - **Cursor hiding**: Mouse pointer is hidden during full‑screen saver mode.
 - **Preview mode support**: Runs safely inside Windows Display Settings preview window.
+- **Display-change resilient**: Survives monitor sleep/wake, display changes, and system sleep/resume — rebuilds and keeps bouncing.
 
 ---
 
 ## 📂 Project Structure
 
-- `BoingBallSaver.cpp` — main source code
+- `BoingBallSaver_v2.3.cpp` — main source code
 - `resource.h` — dialog and control IDs
 - `.rc` file — dialog layout and resources
 - `sounds/` — Boing ball bounce and wall hit WAV files
@@ -79,6 +80,9 @@ Unified displays: In multiple monitor setup, treat all monitors as one big displ
 *Untested on windows 8 or older.
 
 ## Releases
-Latest:
-V2.0 - https://github.com/Sinphaltimus/Amiga-Boing-Ball-Screensaver-for-Windows-10-and-11/releases/tag/V2.0
+Latest: V2.3 - https://github.com/Sinphaltimus/Amiga-Boing-Ball-Screensaver-for-Windows-10-and-11/releases/tag/V2.3
+
+### V2.3 — November 26, 2026
+- **Crash fix:** Fixed an access-violation crash in `nvoglv64.dll` (NVIDIA OpenGL driver) that could happen when the display setup changed while the screensaver was running — monitor sleep/wake, display changes, or system sleep/resume. The screensaver now detects the lost display surface, rebuilds its OpenGL windows for the new setup, and keeps bouncing instead of crashing.
+- **Preview fix:** The Screen Saver Settings preview pane no longer goes black after a failed frame.
 
